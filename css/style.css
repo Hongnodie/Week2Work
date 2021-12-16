@@ -1,0 +1,336 @@
+:root {
+    --gray: #ccd4cfee;
+    --pureblue: rgb(89,152,235);
+    --darkblue: rgb(65,57,86);
+    --frameorange: rgb(162,99,51);
+    --highlight: rgb(253,215,60);
+    --dark: #000;
+    --white:#FFF;
+    --radius: 50px;
+}
+
+::selection {
+    background-color: var(--highlight);
+    color: var(--pureblue);
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  line-height: 1.3;
+  min-width: 500px;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+    background-color: var(--darkblue);
+    color: var(--darkblue);
+}
+
+#page-title {
+  display: block;
+  font-size: 6rem;
+  padding: 1rem 3rem 3rem 12rem;
+  background-color: var(--pureblue);
+  margin-top: 1rem;
+}
+
+header nav ul {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--pureblue);
+  padding-left: 1rem;
+}
+
+header nav a {
+  color: var(--darkblue);
+  padding: 15px;
+  font-weight: bold;
+  text-decoration:underline;
+}
+  
+header nav a:hover {
+  color: var(--white);
+}
+
+main {
+  width: 90%;
+  align-self: center;
+}
+
+aside {
+  flex: 0;
+  background-color: var(--white);
+  padding-right: 20px;
+  text-align: right;
+  border-right: solid 4px var(--frameorange);
+  margin-right: 4rem;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: bold;
+  width: 200px;
+}
+
+.sharesec {
+  display: flex;
+  margin: 5rem auto;
+  align-items: center;
+}
+
+.rightcolumn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vmax;
+}
+
+#Pseudop {
+  display: block;
+  font-size: 5rem;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#Pseudop:hover::after {
+  content: " Very Nice to meet you!";
+  font-weight: bold;
+  display:block;
+}
+
+.photocard {
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: var(--radius);
+  padding: 10px;
+  flex: 0 0 300px;
+  transform:scale(1, 1);
+  box-shadow: 10px 10px 5px var(--highlight);
+}
+
+.photocard p {
+  text-align: center;
+  border-radius: 0 0 var(--radius) var(--radius);
+  padding: 20px;
+  background-color: var(--darkblue);
+  color: var(--white);
+  font-size: 3rem;
+}
+
+#photo {
+  height: 300px;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.selfintro {
+  display: block;
+  font-size: 3rem;
+}
+
+span[data-descr] {
+  position: relative;
+  text-decoration: underline;
+  color: var(--darkblue);
+  cursor: help;
+}
+
+span[data-descr]:hover::after,
+span[data-descr]:focus::after {
+  content: attr(data-descr);
+  position: absolute;
+  left: 0px;
+  bottom: 8rem;
+  min-width: 600px;
+  border: 1px var(--frameorange) solid;
+  background-color: var(--darkblue);
+  padding: 1rem;
+  color: var(--white);
+  font-size: .8;
+  z-index: 1;
+}
+
+.ptflio {
+  display: block;
+}
+
+.worklarge {
+  width: 100%;
+  position: relative;
+}
+
+.workwrap {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.wrapcard {
+  width: 50%;
+  position: relative;
+  padding: 1em;
+}
+
+iframe {
+  width: 100%;
+}
+
+h3 {
+  display: flexbox;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1rem;
+  z-index: 2;
+  box-sizing: content-box;
+  color: var(--white);
+  background-color: var(--frameorange);
+}
+
+.card-header {
+  position: absolute;
+  border: 2px var(--frameorange) solid;
+  z-index: 1;
+  bottom: 1em;
+  left: 0;
+}
+
+#worklargeimage {
+  border: 4px var(--frameorange) solid;
+  width: 100%;
+}
+
+.contactdiv {
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.contactdiv a {
+  color: var(--dark);
+  padding: 15px;
+  font-weight: bold;
+  text-decoration:underline;
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 20px;   /* to fix the height */
+  background-color: var(--darkblue);
+  color: var(--white);
+}
+
+#Photolink aside {
+  height:35rem;
+}
+
+#Aboutmelink aside {
+  height:20rem;
+}
+
+#Portfoliolink aside {
+  height:70rem;
+}
+
+#Contactlink aside {
+  height:10rem;
+}
+
+
+@media screen and (max-width: 1091px) {
+  header, .sharesec {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    flex: 1 initial;
+  }
+
+  h2 {
+    width: 100%;
+    text-align: left;
+  }
+
+  #page-title {
+    width: 100%;
+    text-align: center;
+    padding: 0rem;
+  }
+
+  header nav {
+    width: 100%;
+    margin: auto;
+  }
+
+  .rightcolumn {
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  header nav ul {
+    background-color: var(--darkblue);
+  }
+
+  header nav ul a {
+    color: var(--white);
+  }
+
+  header nav a:hover {
+    color: var(--highlight);
+  }
+
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  aside {
+    width: 100%;
+    text-align: center;
+    border-right: 0;
+    border-bottom: solid 2px var(--frameorange);
+    height: 20px;
+    margin-bottom: 2rem;
+  }
+
+  .wrapcard {
+    width: 100%;
+  }
+
+  .contactdiv {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    padding-bottom: 0;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav a {
+    text-decoration:none;
+    font-size: 2rem;
+  }
+}
