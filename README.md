@@ -17,9 +17,10 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 # Version: 
 -----------
-Web page: 
-Contact: 
-Screenshot:
+Web page: https://hongnodie.github.io/Week2Work/
+Contact: 92ganhong@gmail.com
+Screenshot & Github repo: https://github.com/Hongnodie/Week2Work.git
+Recorded video link: https://drive.google.com/file/d/1-sPX4MXrXKXEl-_tnVayptoP-BU-VtI8/view
 
 # MODIFIERS
 -----------
@@ -52,3 +53,6 @@ Version 4:
 
 Version 5:
     Deleted repetitive stylings
+
+Version 6:
+    Updated screenshot and illustrative videos
