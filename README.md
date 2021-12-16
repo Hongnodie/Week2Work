@@ -49,3 +49,6 @@ Version 3:
 Version 4:
     Selector name change to ease reading
     Added line comment to illustrate the functionalities
+
+Version 5:
+    Deleted repetitive stylings
