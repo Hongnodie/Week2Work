@@ -38,12 +38,14 @@ Or access the github repository
 # VERSION HISTORY
 ---------------
 Version 1:
-  The webpage has finished primary coding
+    The webpage has finished primary coding
 
 Version 2:
-  Format synchronized to align conventions
+    Format synchronized to align conventions
 
 Version 3:
-  Framing the structure of README.md file
+    Framing the structure of README.md file
 
 Version 4:
+    Selector name change to ease reading
+    Added line comment to illustrate the functionalities
